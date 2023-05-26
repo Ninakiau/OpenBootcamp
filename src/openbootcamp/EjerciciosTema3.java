@@ -15,13 +15,25 @@ public class EjerciciosTema3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Coche miCoche = new Coche();
+        miCoche.incrementarNumeroPuertas();
+        System.out.println("El coche tiene " + miCoche.numeroDePuertas + " puertas.");
+        
+// Ejercicio de suma
         int num1=4;
         int num2=5;
         int num3=6;
-        System.out.println(Suma( num1, num2, num3));
+        System.out.println("La suma es: "+FuncionSuma( num1, num2, num3));
     }
-    public static int Suma(int n1, int n2, int n3) {
+    public static int FuncionSuma(int n1, int n2, int n3) {
         return n1+n2+n3;
+    }
+}
+class Coche {
+
+    int numeroDePuertas = 2;
+
+    public void incrementarNumeroPuertas() {
+        numeroDePuertas++;
     }
 }
