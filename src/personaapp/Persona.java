@@ -10,12 +10,16 @@ package personaapp;
  * @author clau
  */
 public class Persona {
-
     private int edad;
     private String nombre;
     private String telefono;
 
-    // Getters y setters de la propiedad 'edad'
+    public Persona(int edad, String nombre, String telefono) {
+        this.edad = edad;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
     public int getEdad() {
         return edad;
     }
@@ -24,7 +28,6 @@ public class Persona {
         this.edad = edad;
     }
 
-    // Getters y setters de la propiedad 'nombre'
     public String getNombre() {
         return nombre;
     }
@@ -33,7 +36,6 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    // Getters y setters de la propiedad 'telefono'
     public String getTelefono() {
         return telefono;
     }
